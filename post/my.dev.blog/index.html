@@ -20,7 +20,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://spothz.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Что происходит Даша - Spot_blog</title>
+    <title>Блог на github.io с установкой Hugo - Spot_blog</title>
 
     
 
@@ -33,23 +33,29 @@
     
         <meta property="og:url" content="https://spothz.github.io/post/my.dev.blog/">
   <meta property="og:site_name" content="Spot_blog">
-  <meta property="og:title" content="Что происходит Даша">
-  <meta property="og:description" content="дашка тест происходит">
+  <meta property="og:title" content="Блог на github.io с установкой Hugo">
+  <meta property="og:description" content="Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
+git config --global user.email &#34;spot7106@gmail.com&#34; git config --global user.name &#34; spothz&#34; список основных команд git
+Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонирует ранее созданный репозиторий разработки:
+git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hugo: переходим в репозиторий разработки и устанавливаем командой.">
   <meta property="og:locale" content="ru">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2025-01-26T10:28:41+00:00">
-    <meta property="article:modified_time" content="2025-01-27T12:02:32+10:00">
-    <meta property="article:tag" content="Openwrt">
-    <meta property="article:tag" content="Блог">
+    <meta property="article:modified_time" content="2025-01-27T19:33:18+10:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Блог На Hugo">
 
     
 
     
         
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Что происходит Даша">
-  <meta name="twitter:description" content="дашка тест происходит">
+  <meta name="twitter:title" content="Блог на github.io с установкой Hugo">
+  <meta name="twitter:description" content="Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
+git config --global user.email &#34;spot7106@gmail.com&#34; git config --global user.name &#34; spothz&#34; список основных команд git
+Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонирует ранее созданный репозиторий разработки:
+git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hugo: переходим в репозиторий разработки и устанавливаем командой.">
 
     <link rel="stylesheet" href="/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
 
@@ -83,6 +89,13 @@
 
 
 
+
+    
+        
+        
+            <script defer src="/js/builtin-copy.a89c7b4e13df953403c75897ad4b6db68fad6534043bb234d29a80015f1ec9d1.js" integrity="sha256-qJx7ThPflTQDx1iXrUttto&#43;tZTQEO7I00pqAAV8eydE="></script>
+        
+    
 
 
 
@@ -214,6 +227,20 @@
 <main>
             <div id="content" class="content-margin">
                 
+    
+    <details class="collapsible-menu-wrapper"><summary class="collapsible-menu-type"><span>Содержание</span></summary><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#создаем-первый-пост">Создаем первый пост:</a></li>
+    <li><a href="#редактируем-hugotoml">Редактируем hugo.toml:</a></li>
+    <li><a href="#создаём-скрипт-для-деплоя">Создаём скрипт для деплоя:</a></li>
+    <li><a href="#проверяем-работу-сайта-запустив-локаторный-сервер">Проверяем работу сайта запустив локаторный сервер:</a></li>
+  </ul>
+</nav>
+        
+    </div></details>
+
 
 
     <div class="content-margin">
@@ -223,8 +250,354 @@
 <article class="line-numbers">
     
     
-    <hr>
-<p>дашка тест происходит</p>
+    <p>Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.</p>
+<pre><code>git config --global user.email &quot;spot7106@gmail.com&quot;
+git config --global user.name &quot; spothz&quot;
+</code></pre>
+<p><a href="obsidian://open?vault=Openwrt&amp;file=%D0%92%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%2F%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%20git">список основных команд git</a></p>
+<p>Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io==
+клонирует ранее созданный репозиторий разработки:</p>
+<pre><code>git clone git@github.com:spothz/spot.blog.git
+cd spot.blog
+</code></pre>
+<hr>
+
+<h1 id="установка-hugo" class="header-anchor-wrapper">Установка hugo:
+  <a href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-hugo" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h1>
+
+<p>переходим в репозиторий разработки и устанавливаем командой.</p>
+<pre><code>cd spot.blog
+</code></pre>
+<p>Debian</p>
+<pre><code>sudo apt install hugo
+</code></pre>
+<p>Arch</p>
+<pre><code>sudo pacman -Sy hugo
+</code></pre>
+<p>Termux</p>
+<pre><code>sudo pkg install hugo
+</code></pre>
+<hr>
+
+<h1 id="создаём-новый-сайт" class="header-anchor-wrapper">Создаём новый сайт:
+  <a href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d1%91%d0%bc-%d0%bd%d0%be%d0%b2%d1%8b%d0%b9-%d1%81%d0%b0%d0%b9%d1%82" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h1>
+
+<pre><code>hugo new site . --force
+</code></pre>
+<p>У Hugo есть <a href="https://themes.gohugo.io/">темы</a>. Я буду использовать тему <a href="https://github.com/kaiiiz/hugo-theme-monochrome">Monochrome</a> в этой статье.
+Для того, чтобы применить тему, добавляем submodule:</p>
+<pre><code>git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/monochrome
+</code></pre>
+<p>И добавляем ее в конфиг Hugo:</p>
+<pre><code>echo 'theme = &quot;monochrome&quot;' &gt;&gt; hugo.toml
+</code></pre>
+<hr>
+
+<h2 id="создаем-первый-пост" class="header-anchor-wrapper">Создаем первый пост:
+  <a href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%b5%d0%bc-%d0%bf%d0%b5%d1%80%d0%b2%d1%8b%d0%b9-%d0%bf%d0%be%d1%81%d1%82" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<p>my.dev.spot.blog.md</p>
+<pre><code>hugo new post/greeting.mdmy.dev.spot.blog.md
+</code></pre>
+<p>После открываем файл</p>
+<pre><code>nano content/post/greeting.md 
+</code></pre>
+<p>и видим следующее:</p>
+<p><code>+++</code>
+<code>title = 'my.dev.spot.blog.md'</code>
+<code>date = 2023-12-06T22:43:16+07:00</code>
+<code>draft = true</code>
+<code>+++</code>
+Изменим под наши нужды:</p>
+<p><code>+++</code>
+<code>title = 'название поста,заголовок'</code>
+<code>date = 2025-01-06T20:13:16+10:00</code>
+<code>draft = true</code>
+<code>tags = ['openwrt', 'блог']</code>
+<code>categories = ['приветствие', 'блог']</code>
+<code>+++</code></p>
+<p><code>Тут любой тест идущий в пост печатаем в формате markdown. Разделителями +++ мы добавляем секцию информации о посте.</code>
+<code>title — название, заголовок</code>
+<code>date — дата</code>
+<code>draft — черновик</code>
+<code>tags — теги</code>
+<code>categories — категории</code></p>
+<hr>
+
+<h2 id="редактируем-hugotoml" class="header-anchor-wrapper">Редактируем hugo.toml:
+  <a href="#%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%b8%d1%80%d1%83%d0%b5%d0%bc-hugotoml" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<pre><code>nano hugo.toml
+</code></pre>
+<p>и приводим к виду:</p>
+<pre><code>baseURL = 'https://spothz.github.io/'
+languageCode = 'ru'
+title = 'Spot_blog'
+languageName = 'ru'
+defaultContentLanguage = &quot;ru&quot;
+paginate = 100 #frontpage pagination
+theme = 'monochrome'
+enableGitInfo = true
+
+[[navbar]]
+  identifier = &quot;categories&quot;
+  name = &quot;Категории&quot;
+  url = &quot;/categories/&quot;
+  weight = 1
+[[navbar]]
+  identifier = &quot;tags&quot;
+  name = &quot;Теги&quot;
+  url = &quot;/tags/&quot;
+  weight = 2
+[[navbar]]
+  identifier = &quot;posts&quot;
+  name = &quot;Статьи&quot;
+  url = &quot;/post/&quot;
+  weight = 3
+
+[taxonomies]
+ category = &quot;categories&quot;
+ tag = &quot;tags&quot;
+ series = &quot;series&quot;
+
+[markup]
+  [markup.highlight] # подсветка кода
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'gruvbox' # темы можно посмотреть на https://xyproto.github.io/splash/docs/all.html
+    tabWidth = 4
+
+[params]
+ navbar_title = &quot;Spot blog&quot; # default: site's title
+ footer = &quot;Copyright © 2023 by Spot_blog&quot; # default: None
+ enable_toc = true # default: true
+ enable_collapsible_toc = true # default: false
+ enable_collapsible_changelogs = false # default: false
+ enable_math = true
+ enable_site_search = true # default: false
+ author = &quot;Spot blog&quot; # default: no author meta tag
+ color_scheme = &quot;dark&quot; # &quot;light&quot; or &quot;dark&quot;
+
+   [params.list_layout]
+  enable_group_by_year = false # default: true
+  enable_show_date = true # default: true
+  enable_pagination = true # default: false
+
+[menu]
+[[menu.main]]
+    name = 'Статьи'
+    pageRef = '/'
+    weight = 10
+[[menu.main]]
+    name = 'Теги'
+    pageRef = '/tags'
+    weight = 20
+[[menu.main]]
+    name = 'Категории'
+    pageRef = '/categories'
+    weight = 30
+
+[[menu.navbar]]
+identifier = &quot;tags&quot;
+name = &quot;Теги&quot;
+title = &quot;Теги&quot;
+url = &quot;/tags/&quot;
+weight = 100
+
+[[menu.navbar]]
+identifier = &quot;categories&quot;
+name = &quot;Категории&quot;
+title = &quot;Категории&quot;
+url = &quot;/categories/&quot;
+weight = -100
+
+[[menu.navbar]]
+identifier = &quot;posts&quot;
+name = &quot;Статьи&quot;
+title = &quot;Статьи&quot;
+url = &quot;/post/&quot;
+weight = 80
+</code></pre>
+<hr>
+
+<h2 id="создаём-скрипт-для-деплоя" class="header-anchor-wrapper">Создаём скрипт для деплоя:
+  <a href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d1%91%d0%bc-%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82-%d0%b4%d0%bb%d1%8f-%d0%b4%d0%b5%d0%bf%d0%bb%d0%be%d1%8f" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<pre><code>nano deploy.sh
+</code></pre>
+<p>и приводим к виду:</p>
+<pre><code>#!/bin/sh
+
+set -e
+
+printf &quot;\033[0;32mДеплой на Github!..\033[0m\n&quot;
+
+msg=&quot;rebuilding site $(date)&quot;
+if [ -n &quot;$*&quot; ]; then
+	msg=&quot;$*&quot;
+fi
+
+echo &quot;&quot;
+echo &quot;&quot;
+echo &quot;Коммитим изменения в $(pwd)&quot;
+hugo -D
+
+cd public
+
+echo &quot;&quot;
+echo &quot;&quot;
+echo &quot;Коммитим изменения в $(pwd)&quot;
+git add .
+git commit -m &quot;$msg&quot;
+git push origin
+
+cd ..
+echo &quot;&quot;
+echo &quot;&quot;
+echo &quot;Коммитим изменения в pwd $(pwd)&quot;
+git add .
+git commit -m &quot;$msg&quot;
+git push origin
+</code></pre>
+<p>Выдаём права:</p>
+<pre><code>chmod +x deploy.sh
+</code></pre>
+
+<h2 id="проверяем-работу-сайта-запустив-локаторный-сервер" class="header-anchor-wrapper">Проверяем работу сайта запустив локаторный сервер:
+  <a href="#%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d1%8f%d0%b5%d0%bc-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%83-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d0%b2-%d0%bb%d0%be%d0%ba%d0%b0%d1%82%d0%be%d1%80%d0%bd%d1%8b%d0%b9-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<pre><code>hugo server -D
+</code></pre>
+<p>переходим по ссылке</p>
+<pre><code>http://localhost:1313/
+</code></pre>
+<p>Выполняем команды:</p>
+<pre><code>git add .
+git commit -m &quot;Deploy site&quot;
+git push
+</code></pre>
+<hr>
+
+<h1 id="приступаем-к-публикации-и-деплой" class="header-anchor-wrapper">Приступаем к публикации и деплой:
+  <a href="#%d0%bf%d1%80%d0%b8%d1%81%d1%82%d1%83%d0%bf%d0%b0%d0%b5%d0%bc-%d0%ba-%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8-%d0%b8-%d0%b4%d0%b5%d0%bf%d0%bb%d0%be%d0%b9" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h1>
+
+<p>Клонируем spothz.github.io и переходим в него:</p>
+<pre><code>git clone git@github.com:spothz/spothz.github.io.git
+cd spothz.github.io.git
+</code></pre>
+<p>Добавляем submodule:</p>
+<pre><code> git submodule add git@spothz.github.io.git public 
+</code></pre>
+<p>Он добавляет наш сайт в директорию public репозитория pages.
+Обновляем модули:</p>
+<pre><code>git submodule update
+</code></pre>
+<p>Делаем публикацию:</p>
+<pre><code>git add .
+git commit -m &quot;Deploy site&quot;
+git push
+</code></pre>
+<p>Переходим в репозиторий разработки:</p>
+<pre><code>cd spot.blog
+</code></pre>
+<p>выполняем:</p>
+<pre><code>./deploy.sh
+</code></pre>
+<p>После ожидаем 10 мин и заходим по адресу <a href="https://spothz.github.io">https://spothz.github.io</a> сайт должен быть опубликован.</p>
+<p>Статья собрана из этих источников <a href="https://habr.com/ru/articles/778900/">1</a> <a href="https://owlpaw.com/blog/hugo-simple-blog/">2</a> и отредактирована по свои нужды.</p>
 
 </article>
 </div>
