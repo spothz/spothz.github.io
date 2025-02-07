@@ -20,7 +20,7 @@
     <meta charset="utf-8">
     <link rel="shortcut icon" href='https://spothz.github.io/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tags - Spot_blog</title>
+    <title>Автообновление правил xray openwrt - Spot_blog</title>
 
     
 
@@ -31,18 +31,33 @@
     
 
     
-        <meta property="og:url" content="https://spothz.github.io/tags/">
+        <meta property="og:url" content="https://spothz.github.io/post/update.rules/">
   <meta property="og:site_name" content="Spot_blog">
-  <meta property="og:title" content="Tags">
+  <meta property="og:title" content="Автообновление правил xray openwrt">
+  <meta property="og:description" content="Обновление правил маршрутизации ядра xray. Автоматическое обновления правил geogeosite.dat и geoio.dat по пути /usr/share/xray/ из https://github.com/runetfreedom/russia-v2ray-rules-dat:
+cd /sbin &amp;&amp; wget https://raw.githubusercontent.com/Spothz/clear_cache_openwrt/refs/heads/main/rules_update.sh Выдать права:
+chmod &#43;x /sbin/rules_update.sh Зайти в запланированные задачи и ввести:
+0 * * * * /sbin/rules_update.sh Перезагрузить cron:
+service cron restart #openwrt #x-ray #rules #auto #update">
   <meta property="og:locale" content="ru">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-02-07T01:05:04+00:00">
+    <meta property="article:modified_time" content="2025-02-07T11:13:30+10:00">
+    <meta property="article:tag" content="Xray">
+    <meta property="article:tag" content="Rules">
 
     
 
     
         
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
+  <meta name="twitter:title" content="Автообновление правил xray openwrt">
+  <meta name="twitter:description" content="Обновление правил маршрутизации ядра xray. Автоматическое обновления правил geogeosite.dat и geoio.dat по пути /usr/share/xray/ из https://github.com/runetfreedom/russia-v2ray-rules-dat:
+cd /sbin &amp;&amp; wget https://raw.githubusercontent.com/Spothz/clear_cache_openwrt/refs/heads/main/rules_update.sh Выдать права:
+chmod &#43;x /sbin/rules_update.sh Зайти в запланированные задачи и ввести:
+0 * * * * /sbin/rules_update.sh Перезагрузить cron:
+service cron restart #openwrt #x-ray #rules #auto #update">
 
     <link rel="stylesheet" href="/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
 
@@ -76,6 +91,13 @@
 
 
 
+
+    
+        
+        
+            <script defer src="/js/builtin-copy.a89c7b4e13df953403c75897ad4b6db68fad6534043bb234d29a80015f1ec9d1.js" integrity="sha256-qJx7ThPflTQDx1iXrUttto&#43;tZTQEO7I00pqAAV8eydE="></script>
+        
+    
 
 
 
@@ -194,11 +216,11 @@
                     
                         <a href="/categories/" class="pure-menu-link">Категории</a>
                     
-                </li><li class="navbar-item pure-menu-item ">
+                </li><li class="navbar-item pure-menu-item insection">
                     
                         <a href="/post/" class="pure-menu-link">Статьи</a>
                     
-                </li><li class="navbar-item pure-menu-item active">
+                </li><li class="navbar-item pure-menu-item ">
                     
                         <a href="/tags/" class="pure-menu-link">Теги</a>
                     
@@ -206,70 +228,59 @@
 </nav>
 <main>
             <div id="content" class="content-margin">
-                <div class="content-margin">
-    <h1>Tags</h1>
-    <div>
-    
-    
-    
+                
 
-    
-    
-        
-    
-        
-    
-        
-    
-        
-    
-    
 
+    <div class="content-margin">
+
+
+
+<article class="line-numbers">
     
     
+    
+<h1 id="обновление-правил-маршрутизации-ядра-xray" class="header-anchor-wrapper">Обновление правил маршрутизации ядра xray.
+  <a href="#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b8-%d1%8f%d0%b4%d1%80%d0%b0-xray" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
 
-    <div>
-        
-            
-            
-            
+</svg>
+  </a>
+</h1>
 
-            <a class="term-item" href="/tags/xray/" style="line-height:1.725rem">
-                <span style="font-size:0.875rem">Xray</span>
-                <span style="font-size:0.675rem"> (1) </span>
-            </a>
-        
-            
-            
-            
+<ol>
+<li>
+<p>Автоматическое обновления правил geogeosite.dat и geoio.dat по пути /usr/share/xray/ из <a href="https://github.com/runetfreedom/russia-v2ray-rules-dat">https://github.com/runetfreedom/russia-v2ray-rules-dat</a>:</p>
+<pre><code> cd /sbin &amp;&amp; wget https://raw.githubusercontent.com/Spothz/clear_cache_openwrt/refs/heads/main/rules_update.sh
+</code></pre>
+</li>
+<li>
+<p>Выдать права:</p>
+<pre><code>chmod +x /sbin/rules_update.sh
+</code></pre>
+</li>
+<li>
+<p>Зайти в запланированные задачи и ввести:</p>
+<pre><code>0 * * * * /sbin/rules_update.sh
+</code></pre>
+</li>
+<li>
+<p>Перезагрузить cron:</p>
+<pre><code> service cron restart
+</code></pre>
+</li>
+</ol>
+<p>#openwrt #x-ray #rules #auto #update</p>
 
-            <a class="term-item" href="/tags/%D0%B1%D0%BB%D0%BE%D0%B3/" style="line-height:1.725rem">
-                <span style="font-size:0.875rem">Блог</span>
-                <span style="font-size:0.675rem"> (1) </span>
-            </a>
-        
-            
-            
-            
-
-            <a class="term-item" href="/tags/%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-git/" style="line-height:1.725rem">
-                <span style="font-size:0.875rem">Команды Git</span>
-                <span style="font-size:0.675rem"> (1) </span>
-            </a>
-        
-            
-            
-            
-
-            <a class="term-item" href="/tags/rules/" style="line-height:1.725rem">
-                <span style="font-size:0.875rem">Rules</span>
-                <span style="font-size:0.675rem"> (1) </span>
-            </a>
-        
-    </div>
-
+</article>
 </div>
-</div>
+
 
                 
                     
