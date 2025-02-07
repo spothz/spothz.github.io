@@ -34,16 +34,14 @@
         <meta property="og:url" content="https://spothz.github.io/post/my.dev.blog/">
   <meta property="og:site_name" content="Spot_blog">
   <meta property="og:title" content="Блог на github.io с установкой Hugo">
-  <meta property="og:description" content="Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
+  <meta property="og:description" content="Блог на GitHub через Hugo. Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
 git config --global user.email &#34;spot7106@gmail.com&#34; git config --global user.name &#34; spothz&#34; список основных команд git
-Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонируем ранее созданный репозиторий разработки:
-git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hugo: переходим в репозиторий разработки и устанавливаем командой.">
+Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонирует ранее созданный репозиторий разработки:">
   <meta property="og:locale" content="ru">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2025-01-26T10:28:41+00:00">
-    <meta property="article:modified_time" content="2025-01-29T09:27:43+10:00">
-    <meta property="article:tag" content="Linux">
+    <meta property="article:modified_time" content="2025-01-29T09:41:58+10:00">
     <meta property="article:tag" content="Блог На Hugo">
 
     
@@ -52,10 +50,9 @@ git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hu
         
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Блог на github.io с установкой Hugo">
-  <meta name="twitter:description" content="Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
+  <meta name="twitter:description" content="Блог на GitHub через Hugo. Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.
 git config --global user.email &#34;spot7106@gmail.com&#34; git config --global user.name &#34; spothz&#34; список основных команд git
-Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонируем ранее созданный репозиторий разработки:
-git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hugo: переходим в репозиторий разработки и устанавливаем командой.">
+Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io== клонирует ранее созданный репозиторий разработки:">
 
     <link rel="stylesheet" href="/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
 
@@ -232,10 +229,16 @@ git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hu
         
             <nav id="TableOfContents">
   <ul>
+    <li><a href="#установка-hugo">Установка hugo:</a></li>
+    <li><a href="#создаём-новый-сайт">Создаём новый сайт:</a></li>
     <li><a href="#создаем-первый-пост">Создаем первый пост:</a></li>
     <li><a href="#редактируем-hugotoml">Редактируем hugo.toml:</a></li>
     <li><a href="#создаём-скрипт-для-деплоя">Создаём скрипт для деплоя:</a></li>
-    <li><a href="#проверяем-работу-сайта-запустив-локаторный-сервер">Проверяем работу сайта запустив локаторный сервер:</a></li>
+    <li><a href="#проверяем-работу-сайта-запустив-локаторный-сервер">Проверяем работу сайта запустив локаторный сервер:</a>
+      <ul>
+        <li><a href="#приступаем-к-публикации-и-деплой">Приступаем к публикации и деплой:</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
         
@@ -250,20 +253,9 @@ git clone git@github.com:spothz/spot.blog.git cd spot.blog Установка hu
 <article class="line-numbers">
     
     
-    <p>Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.</p>
-<pre><code>git config --global user.email &quot;spot7106@gmail.com&quot;
-git config --global user.name &quot; spothz&quot;
-</code></pre>
-<p><a href="obsidian://open?vault=Openwrt&amp;file=%D0%92%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%2F%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%20git">список основных команд git</a></p>
-<p>Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io==
-клонируем ранее созданный репозиторий разработки:</p>
-<pre><code>git clone git@github.com:spothz/spot.blog.git
-cd spot.blog
-</code></pre>
-<hr>
-
-<h1 id="установка-hugo" class="header-anchor-wrapper">Установка hugo:
-  <a href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-hugo" class="header-anchor-link">
+    
+<h1 id="блог-на-github-через-hugo" class="header-anchor-wrapper">Блог на GitHub через Hugo.
+  <a href="#%d0%b1%d0%bb%d0%be%d0%b3-%d0%bd%d0%b0-github-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-hugo" class="header-anchor-link">
     <svg width="16px" height="16px" viewBox="0 0 24 24">
 <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -276,6 +268,33 @@ cd spot.blog
 </svg>
   </a>
 </h1>
+
+<p>Если вы как и я только установили git обязательной процедурой будет зарегистрировать пользователя это делается один раз.</p>
+<pre><code>git config --global user.email &quot;spot7106@gmail.com&quot;
+git config --global user.name &quot; spothz&quot;
+</code></pre>
+<p><a href="obsidian://open?vault=Openwrt&amp;file=%D0%92%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%2F%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%20git">список основных команд git</a></p>
+<p>Создаём два репозитория один простой для разработки с любым названием. второй GitHub pages при создании указать и добавить readme.md называем ==username.gitgub.io==
+клонирует ранее созданный репозиторий разработки:</p>
+<pre><code>git clone git@github.com:spothz/spot.blog.git
+cd spot.blog
+</code></pre>
+<hr>
+
+<h2 id="установка-hugo" class="header-anchor-wrapper">Установка hugo:
+  <a href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-hugo" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>переходим в репозиторий разработки и устанавливаем командой.</p>
 <pre><code>cd spot.blog
@@ -291,7 +310,7 @@ cd spot.blog
 </code></pre>
 <hr>
 
-<h1 id="создаём-новый-сайт" class="header-anchor-wrapper">Создаём новый сайт:
+<h2 id="создаём-новый-сайт" class="header-anchor-wrapper">Создаём новый сайт:
   <a href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d1%91%d0%bc-%d0%bd%d0%be%d0%b2%d1%8b%d0%b9-%d1%81%d0%b0%d0%b9%d1%82" class="header-anchor-link">
     <svg width="16px" height="16px" viewBox="0 0 24 24">
 <svg
@@ -304,7 +323,7 @@ cd spot.blog
 
 </svg>
   </a>
-</h1>
+</h2>
 
 <pre><code>hugo new site . --force
 </code></pre>
@@ -559,7 +578,7 @@ git push
 </code></pre>
 <hr>
 
-<h1 id="приступаем-к-публикации-и-деплой" class="header-anchor-wrapper">Приступаем к публикации и деплой:
+<h3 id="приступаем-к-публикации-и-деплой" class="header-anchor-wrapper">Приступаем к публикации и деплой:
   <a href="#%d0%bf%d1%80%d0%b8%d1%81%d1%82%d1%83%d0%bf%d0%b0%d0%b5%d0%bc-%d0%ba-%d0%bf%d1%83%d0%b1%d0%bb%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d0%b8-%d0%b8-%d0%b4%d0%b5%d0%bf%d0%bb%d0%be%d0%b9" class="header-anchor-link">
     <svg width="16px" height="16px" viewBox="0 0 24 24">
 <svg
@@ -572,7 +591,7 @@ git push
 
 </svg>
   </a>
-</h1>
+</h3>
 
 <p>Клонируем spothz.github.io и переходим в него:</p>
 <pre><code>git clone git@github.com:spothz/spothz.github.io.git
@@ -597,7 +616,8 @@ git push
 <pre><code>./deploy.sh
 </code></pre>
 <p>После ожидаем 10 мин и заходим по адресу <a href="https://spothz.github.io">https://spothz.github.io</a> сайт должен быть опубликован.</p>
-<p>Статья собрана из этих источников <a href="https://habr.com/ru/articles/778900/">1</a> <a href="https://owlpaw.com/blog/hugo-simple-blog/">2</a> и отредактирована по свои нужды.</p>
+<p>Статья собрана из этих источников <a href="https://habr.com/ru/articles/778900/">1</a> <a href="https://owlpaw.com/blog/hugo-simple-blog/">2</a> и отредактирована по свои нужды.
+#github #blog</p>
 
 </article>
 </div>

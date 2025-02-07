@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spot_blog</title>
-    <link>https://spothz.github.io/</link>
-    <description>Recent content on Spot_blog</description>
+    <title>Github on Spot_blog</title>
+    <link>https://spothz.github.io/categories/github/</link>
+    <description>Recent content in Github on Spot_blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 26 Jan 2025 22:38:44 +0000</lastBuildDate><atom:link href="https://spothz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Jan 2025 22:38:44 +0000</lastBuildDate><atom:link href="https://spothz.github.io/categories/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Основные команда git</title>
       <link>https://spothz.github.io/post/greeting/</link>
