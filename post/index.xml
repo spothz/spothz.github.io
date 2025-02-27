@@ -6,7 +6,48 @@
     <description>Recent content in Posts on Spot_blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 07 Feb 2025 01:05:04 +0000</lastBuildDate><atom:link href="https://spothz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Feb 2025 23:21:44 +0000</lastBuildDate><atom:link href="https://spothz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Перенос порта SSH</title>
+      <link>https://spothz.github.io/post/ssh22/</link>
+      <pubDate>Thu, 27 Feb 2025 23:21:44 +0000</pubDate>
+      
+      <guid>https://spothz.github.io/post/ssh22/</guid>
+      <description>&lt;h1 id=&#34;перенос-порта-ssh-с-22&#34; class=&#34;header-anchor-wrapper&#34;&gt;Перенос порта ssh с 22.
+  &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%be%d1%81-%d0%bf%d0%be%d1%80%d1%82%d0%b0-ssh-%d1%81-22&#34; class=&#34;header-anchor-link&#34;&gt;
+    &lt;svg width=&#34;16px&#34; height=&#34;16px&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/svg&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+
+&lt;p&gt;Чтобы изменить порт для SSH с 22 на 44333, выполните следующие шаги:&lt;/p&gt;
+
+&lt;h2 id=&#34;1-измените-конфигурацию-ssh&#34; class=&#34;header-anchor-wrapper&#34;&gt;1. Измените конфигурацию SSH
+  &lt;a href=&#34;#1-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8e-ssh&#34; class=&#34;header-anchor-link&#34;&gt;
+    &lt;svg width=&#34;16px&#34; height=&#34;16px&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/svg&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;Откройте конфигурационный файл SSH-сервера для редактирования:&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Автообновление правил xray openwrt</title>
       <link>https://spothz.github.io/post/update.rules/</link>
