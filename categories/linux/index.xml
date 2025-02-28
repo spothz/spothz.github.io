@@ -13,39 +13,25 @@
       <pubDate>Thu, 27 Feb 2025 23:21:44 +0000</pubDate>
       
       <guid>https://spothz.github.io/post/ssh22/</guid>
-      <description>&lt;h1 id=&#34;перенос-порта-ssh-с-22&#34; class=&#34;header-anchor-wrapper&#34;&gt;Перенос порта ssh с 22.
-  &lt;a href=&#34;#%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%be%d1%81-%d0%bf%d0%be%d1%80%d1%82%d0%b0-ssh-%d1%81-22&#34; class=&#34;header-anchor-link&#34;&gt;
-    &lt;svg width=&#34;16px&#34; height=&#34;16px&#34; viewBox=&#34;0 0 24 24&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/svg&gt;
-  &lt;/a&gt;
-&lt;/h1&gt;
+      <description>&lt;h1&gt;Перенос порта ssh с 22.&lt;/h1&gt;
 
 &lt;p&gt;Чтобы изменить порт для SSH с 22 на 44333, выполните следующие шаги:&lt;/p&gt;
 
-&lt;h2 id=&#34;1-измените-конфигурацию-ssh&#34; class=&#34;header-anchor-wrapper&#34;&gt;1. Измените конфигурацию SSH
-  &lt;a href=&#34;#1-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8e-ssh&#34; class=&#34;header-anchor-link&#34;&gt;
-    &lt;svg width=&#34;16px&#34; height=&#34;16px&#34; viewBox=&#34;0 0 24 24&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
+&lt;h2&gt;1. Измените конфигурацию SSH&lt;/h2&gt;
 
-&lt;/svg&gt;
-  &lt;/a&gt;
-&lt;/h2&gt;
+&lt;p&gt;Откройте конфигурационный файл SSH-сервера для редактирования:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/ssh/sshd_config
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2. Измените строку с портом&lt;/h2&gt;
 
-&lt;p&gt;Откройте конфигурационный файл SSH-сервера для редактирования:&lt;/p&gt;</description>
+&lt;p&gt;Найдите строку, которая выглядит как:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#928374;font-style:italic&#34;&gt;#Port 22&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Удалите комментарий (если есть) и измените номер порта на 44333:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Port &lt;span style=&#34;color:#d3869b&#34;&gt;44333&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;3. Сохраните изменения и выйдите&lt;/h2&gt;
+
+&lt;p&gt;Нажмите &lt;code&gt;Ctrl + X&lt;/code&gt;, затем &lt;code&gt;Y&lt;/code&gt; и &lt;code&gt;Enter&lt;/code&gt;, чтобы сохранить изменения и выйти из редактора.&lt;/p&gt;</description>
     </item>
     
   </channel>
