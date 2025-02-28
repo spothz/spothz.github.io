@@ -1,0 +1,404 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang='ru'><head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href='https://spothz.github.io/favicon.ico' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Устанрвка и настрйка 3x-uiи warp-cli - Spot_blog</title>
+
+    
+
+    
+
+    
+    <meta name="author" content="Spot blog" />
+    
+
+    
+        <meta property="og:url" content="https://spothz.github.io/post/3x-ui/">
+  <meta property="og:site_name" content="Spot_blog">
+  <meta property="og:title" content="Устанрвка и настрйка 3x-uiи warp-cli">
+  <meta property="og:description" content="Установка и настройка 3x-ui. Предполагается, что VPS уже куплен. Если нет - рекомендую брать тут:
+inferno.name pq.hosting Обновляем репозитории и софт на сервере:
+apt update &amp;&amp; apt upgrade -y Устанавливаем панель 3x-ui
+bash &lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) В процессе установки выбираем y в ответ на вопрос хотим ли внести изменения. Вводим логин, пароль, порт любой в диапазоне 41000-65000, например 63421 и сохраняем полученные данные для авторизации в панели.">
+  <meta property="og:locale" content="ru">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-02-28T00:07:21+00:00">
+    <meta property="article:modified_time" content="2025-02-28T00:07:21+00:00">
+    <meta property="article:tag" content="Vps">
+    <meta property="article:tag" content="3x-Ui">
+
+    
+
+    
+        
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Устанрвка и настрйка 3x-uiи warp-cli">
+  <meta name="twitter:description" content="Установка и настройка 3x-ui. Предполагается, что VPS уже куплен. Если нет - рекомендую брать тут:
+inferno.name pq.hosting Обновляем репозитории и софт на сервере:
+apt update &amp;&amp; apt upgrade -y Устанавливаем панель 3x-ui
+bash &lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh) В процессе установки выбираем y в ответ на вопрос хотим ли внести изменения. Вводим логин, пароль, порт любой в диапазоне 41000-65000, например 63421 и сохраняем полученные данные для авторизации в панели.">
+
+    <link rel="stylesheet" href="/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
+
+
+
+
+
+    
+    <script>
+        if (!('theme' in localStorage)) {
+            localStorage.theme = 'dark';
+        }
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    </script>
+<script defer src="/js/header.7c57075675400a1a12bc3fcfc744dd74e1e417b8db11fdef378d7a7ef1cc9e3f.js" integrity="sha256-fFcHVnVAChoSvD/Px0TddOHkF7jbEf3vN416fvHMnj8="></script>
+
+
+
+    <script defer src="/js/zooming.3bda780b3d5a676b6068e5ad5fd77a313c4371117131529f7e7480e7d4b64d96.js" integrity="sha256-O9p4Cz1aZ2tgaOWtX9d6MTxDcRFxMVKffnSA59S2TZY="></script>
+
+
+
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.3/tex-mml-chtml.js"></script>
+    <script defer src="/js/math.5a8dbbda075325162f7a690e0de21e861a1794248ace5298c0d8479f0ed55ac8.js" integrity="sha256-Wo272gdTJRYvemkODeIehhoXlCSKzlKYwNhHnw7VWsg="></script>
+
+
+
+
+    
+        
+        
+            <script defer src="/js/builtin-copy.a89c7b4e13df953403c75897ad4b6db68fad6534043bb234d29a80015f1ec9d1.js" integrity="sha256-qJx7ThPflTQDx1iXrUttto&#43;tZTQEO7I00pqAAV8eydE="></script>
+        
+    
+
+
+
+    
+    
+    
+    <script defer src="/js/search-ru.1bea491a51fd12c54bf5da8521c31b319f2c27885bfdddee4731c3ef5fab4518.js" integrity="sha256-G&#43;pJGlH9EsVL9dqFIcMbMZ8sJ4hb/d3uRzHD71&#43;rRRg="></script>
+
+
+
+
+
+
+    
+</head>
+<body><header>
+    <div id="header_left">
+        <div id="sidebar_btn">
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+
+</svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul><li>
+                            <a href="/categories/">Категории</a></li><li>
+                            <a href="/post/">Статьи</a></li><li>
+                            <a href="/tags/">Теги</a></li></ul>
+            </div>
+        </div>
+    
+        <div class="brand">
+            <div>
+                <a href="/">Spot blog</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+
+</svg>
+            <svg id="light_mode_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+
+</svg>
+        </div>
+
+        
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+</svg>
+
+</svg><div id="search_menu_wrapper" class="hidden">
+    <div id="search_menu">
+        <div id="search_menu_toolbar">
+            <div id="search_menu_input_wrapper">
+                <input id="search_menu_input" type="text" placeholder='Поиск по записям'>
+            </div>
+            <div id="search_menu_close_btn">
+                <svg width="18px" height="18px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>
+</svg>
+
+</svg>
+            </div>
+        </div>
+        <div id="search_menu_results">
+        </div>
+    </div>
+</div>
+</div>
+        
+
+        
+    </div>
+</header>
+<nav id="navbar" class="pure-menu">
+    <ul class="pure-menu-list"><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/categories/" class="pure-menu-link">Категории</a>
+                    
+                </li><li class="navbar-item pure-menu-item insection">
+                    
+                        <a href="/post/" class="pure-menu-link">Статьи</a>
+                    
+                </li><li class="navbar-item pure-menu-item ">
+                    
+                        <a href="/tags/" class="pure-menu-link">Теги</a>
+                    
+                </li></ul>
+</nav>
+<main>
+            <div id="content" class="content-margin">
+                
+    
+    <details class="collapsible-menu-wrapper"><summary class="collapsible-menu-type"><span>Содержание</span></summary><div class="collapsible-menu">
+        
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#устанавливаем-фаервол">Устанавливаем фаервол</a>
+      <ul>
+        <li><a href="#скрипт-установки-официального-warp-cli-в-режиме-локального-прокси-для-серверов-на-debian-и-ubuntu">Скрипт установки официального warp-cli в режиме локального прокси для серверов на Debian и Ubuntu.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        
+    </div></details>
+
+
+
+    <div class="content-margin">
+
+
+
+<article class="line-numbers">
+    
+    
+    
+<h1 id="установка-и-настройка-3x-ui" class="header-anchor-wrapper">Установка и настройка 3x-ui.
+  <a href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-3x-ui" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h1>
+
+<p>Предполагается, что VPS уже куплен. Если нет - рекомендую брать тут:</p>
+<ul>
+<li>inferno.name</li>
+<li>pq.hosting</li>
+</ul>
+<ol>
+<li>
+<p>Обновляем репозитории и софт на сервере:</p>
+<pre><code> apt update &amp;&amp; apt upgrade -y
+</code></pre>
+</li>
+<li>
+<p>Устанавливаем панель 3x-ui</p>
+<pre><code> bash &lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+</code></pre>
+</li>
+</ol>
+<p>В процессе установки выбираем y в ответ на вопрос хотим ли внести изменения. Вводим логин, пароль, порт любой в диапазоне 41000-65000, например 63421 и сохраняем полученные данные для авторизации в панели.</p>
+<ol start="3">
+<li>
+<p>Запускаем скрипт, который установит SSL-сертификат в панель для безопасного входа</p>
+<pre><code> bash &lt;(curl -Ls https://raw.githubusercontent.com/cyb3rm4gus/3x-ui-auto_add_ssl/main/3x-ui-autossl.sh)
+</code></pre>
+</li>
+<li>
+<p>Установка Cloudflare WARP
+Вводим команду x-ui, в появившемся меню выбираем пункт 21, затем опцию 1. Порт устанавливаем 40000</p>
+</li>
+<li>
+<p>Установка fail2ban
+Вводим команду</p>
+<p>x-ui</p>
+</li>
+</ol>
+<p>для вызова меню, выбираем пункт 20, затем опцию 1, дожидаемся завершения.
+Перезагрузка панели x-ui выбираем пункт 13</p>
+<p>Поздравляю, на этом настройка панели через консоль завершена</p>
+<p>Заходим на сервер по адресу: https://ip_сервера:порт/web-base-path, порт и web-base-path вы указывали выше, и (надеюсь) вы их сохранили. Если нет, вызовите меню командой x-ui и выберите пункт 10 для просмотра конфигурации.</p>
+<p>После ввода логина и пароля перейдите в раздел настройки xray, выберите WARP и следуйте инструкции из видео.</p>
+<p>При указании маршрутизации добавьте:</p>
+<pre><code>geosite:category-gov-ru,regexp:.*\.ru$,regexp:.*\.su$`
+</code></pre>
+<p>После этого обязательно нажмите вверху &ldquo;сохранить&rdquo; и &ldquo;перезагрузить&rdquo;.</p>
+<p>Создание клиентов</p>
+<ul>
+<li>В настройках безопасности выбираем REALITY и жмем Get New Cert ниже.</li>
+<li>Раскрываем поле &ldquo;клиент&rdquo; и в Flow выбираем xtls-rprx-vision</li>
+<li>Изменяем yahoo.com и <a href="https://www.yahoo.com">www.yahoo.com</a> на google.com и <a href="https://www.google.com">www.google.com</a></li>
+<li>В пункте uTLS выбираем chrome</li>
+<li>После этого жмем создать, конфиг и сервер готовы к использованию.</li>
+</ul>
+
+<h2 id="устанавливаем-фаервол" class="header-anchor-wrapper">Устанавливаем фаервол
+  <a href="#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%b0%d0%b2%d0%bb%d0%b8%d0%b2%d0%b0%d0%b5%d0%bc-%d1%84%d0%b0%d0%b5%d1%80%d0%b2%d0%be%d0%bb" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
+
+<pre><code>sudo apt install ufw -y
+</code></pre>
+<p>Разрешаем SSH</p>
+<pre><code>sudo ufw allow 22/tcp
+</code></pre>
+<p>Разрешаем панель 3x-ui</p>
+<pre><code>sudo ufw allow 2053/tcp
+</code></pre>
+<p>Разрешаем порт для VLESS/XTLS Reality</p>
+<pre><code>sudo ufw allow 443/tcp
+</code></pre>
+<p>Включаем UFW</p>
+<pre><code>sudo ufw enable
+</code></pre>
+<p>Проверяем статус UFW</p>
+<pre><code>sudo ufw status
+</code></pre>
+<p>Для добавления любого порта соотвественно:</p>
+<pre><code>ufw allow номер_порта
+</code></pre>
+<hr>
+<p>Официальные SNI (Reality Dest) от 😍🥰😘😻</p>
+<p>teamdocs.su:443 - для серверов в Швеции
+wikiportal.su:443 - для серверов в Германии
+docscenter.su:443 - для серверов в Москве
+Они обеспечат максимальную скорость, стабильность соединения и маскировку вашего сервера 🤿</p>
+<hr>
+
+<h3 id="скрипт-установки-официального-warp-cli-в-режиме-локального-прокси-для-серверов-на-debian-и-ubuntu" class="header-anchor-wrapper">Скрипт установки официального warp-cli в режиме локального прокси для серверов на Debian и Ubuntu.
+  <a href="#%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b8-%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-warp-cli-%d0%b2-%d1%80%d0%b5%d0%b6%d0%b8%d0%bc%d0%b5-%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b3%d0%be-%d0%bf%d1%80%d0%be%d0%ba%d1%81%d0%b8-%d0%b4%d0%bb%d1%8f-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%be%d0%b2-%d0%bd%d0%b0-debian-%d0%b8-ubuntu" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h3>
+
+<p>➖ Подходит, чтобы настроить варп для 3X-UI или Marzban
+➖ После установки на вашем сервере появляется локальный socks прокси на адресе 127.0.0.1:30000
+➖ Установка:</p>
+<pre><code>curl -L https://raw.githubusercontent.com/Skrepysh/tools/refs/heads/main/install-warp-cli.sh &gt; install-warp-cli.sh &amp;&amp; sudo chmod +x install-warp-cli.sh &amp;&amp; sudo ./install-warp-cli.sh
+</code></pre>
+<p>Чтобы добавить warp-cli в 3X-UI добавьте outbound (исходящий) со следующими параметрами:
+<a href="https://github.com/spothz/Wiki/blob/main/IMG_20250228_102003_384.jpg">https://github.com/spothz/Wiki/blob/main/IMG_20250228_102003_384.jpg</a></p>
+
+</article>
+</div>
+
+
+                
+                    
+                
+
+                
+            </div>
+        </main>
+<footer>
+    <article>Copyright © 2023 by Spot_blog</article>
+</footer>
+
+</body>
+</html>

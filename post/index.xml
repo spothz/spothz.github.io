@@ -6,7 +6,48 @@
     <description>Recent content in Posts on Spot_blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Thu, 27 Feb 2025 23:21:44 +0000</lastBuildDate><atom:link href="https://spothz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Feb 2025 00:07:21 +0000</lastBuildDate><atom:link href="https://spothz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Устанрвка и настрйка 3x-uiи warp-cli</title>
+      <link>https://spothz.github.io/post/3x-ui/</link>
+      <pubDate>Fri, 28 Feb 2025 00:07:21 +0000</pubDate>
+      
+      <guid>https://spothz.github.io/post/3x-ui/</guid>
+      <description>&lt;h1 id=&#34;установка-и-настройка-3x-ui&#34; class=&#34;header-anchor-wrapper&#34;&gt;Установка и настройка 3x-ui.
+  &lt;a href=&#34;#%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8-%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-3x-ui&#34; class=&#34;header-anchor-link&#34;&gt;
+    &lt;svg width=&#34;16px&#34; height=&#34;16px&#34; viewBox=&#34;0 0 24 24&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;24&#34; height=&#34;24&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/svg&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+
+&lt;p&gt;Предполагается, что VPS уже куплен. Если нет - рекомендую брать тут:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;inferno.name&lt;/li&gt;
+&lt;li&gt;pq.hosting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Обновляем репозитории и софт на сервере:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; apt update &amp;amp;&amp;amp; apt upgrade -y
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Устанавливаем панель 3x-ui&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; bash &amp;lt;(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;В процессе установки выбираем y в ответ на вопрос хотим ли внести изменения. Вводим логин, пароль, порт любой в диапазоне 41000-65000, например 63421 и сохраняем полученные данные для авторизации в панели.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Перенос порта SSH</title>
       <link>https://spothz.github.io/post/ssh22/</link>
