@@ -35,10 +35,7 @@
   <meta property="og:site_name" content="Spot_blog">
   <meta property="og:title" content="Перенос порта SSH">
   <meta property="og:description" content="Перенос порта ssh с 22. Чтобы изменить порт для SSH с 22 на 44333, выполните следующие шаги:
-1. Измените конфигурацию SSH Откройте конфигурационный файл SSH-сервера для редактирования:
-sudo nano /etc/ssh/sshd_config 2. Измените строку с портом Найдите строку, которая выглядит как:
-#Port 22 Удалите комментарий (если есть) и измените номер порта на 44333:
-Port 44333 3. Сохраните изменения и выйдите Нажмите Ctrl &#43; X, затем Y и Enter, чтобы сохранить изменения и выйти из редактора.">
+1. Измените конфигурацию SSH Откройте конфигурационный файл SSH-сервера для редактирования:">
   <meta property="og:locale" content="ru">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
@@ -53,10 +50,7 @@ Port 44333 3. Сохраните изменения и выйдите Нажми
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Перенос порта SSH">
   <meta name="twitter:description" content="Перенос порта ssh с 22. Чтобы изменить порт для SSH с 22 на 44333, выполните следующие шаги:
-1. Измените конфигурацию SSH Откройте конфигурационный файл SSH-сервера для редактирования:
-sudo nano /etc/ssh/sshd_config 2. Измените строку с портом Найдите строку, которая выглядит как:
-#Port 22 Удалите комментарий (если есть) и измените номер порта на 44333:
-Port 44333 3. Сохраните изменения и выйдите Нажмите Ctrl &#43; X, затем Y и Enter, чтобы сохранить изменения и выйти из редактора.">
+1. Измените конфигурацию SSH Откройте конфигурационный файл SSH-сервера для редактирования:">
 
     <link rel="stylesheet" href="/style.min.6326d9dc8b173d44c2b431addc7b78633138d874bd37824a3ca1ddac925110e2.css" integrity="sha256-YybZ3IsXPUTCtDGt3Ht4YzE42HS9N4JKPKHdrJJREOI=">
 
@@ -255,27 +249,92 @@ Port 44333 3. Сохраните изменения и выйдите Нажми
     
     
     
-<h1>Перенос порта ssh с 22.</h1>
+<h1 id="перенос-порта-ssh-с-22" class="header-anchor-wrapper">Перенос порта ssh с 22.
+  <a href="#%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%be%d1%81-%d0%bf%d0%be%d1%80%d1%82%d0%b0-ssh-%d1%81-22" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h1>
 
 <p>Чтобы изменить порт для SSH с 22 на 44333, выполните следующие шаги:</p>
 
-<h2>1. Измените конфигурацию SSH</h2>
+<h2 id="1-измените-конфигурацию-ssh" class="header-anchor-wrapper">1. Измените конфигурацию SSH
+  <a href="#1-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d0%b5-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d1%8e-ssh" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Откройте конфигурационный файл SSH-сервера для редактирования:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/ssh/sshd_config
 </span></span></code></pre></div>
-<h2>2. Измените строку с портом</h2>
+<h2 id="2-измените-строку-с-портом" class="header-anchor-wrapper">2. Измените строку с портом
+  <a href="#2-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d0%b5-%d1%81%d1%82%d1%80%d0%be%d0%ba%d1%83-%d1%81-%d0%bf%d0%be%d1%80%d1%82%d0%be%d0%bc" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Найдите строку, которая выглядит как:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#928374;font-style:italic">#Port 22</span>
 </span></span></code></pre></div><p>Удалите комментарий (если есть) и измените номер порта на 44333:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Port <span style="color:#d3869b">44333</span>
 </span></span></code></pre></div>
-<h2>3. Сохраните изменения и выйдите</h2>
+<h2 id="3-сохраните-изменения-и-выйдите" class="header-anchor-wrapper">3. Сохраните изменения и выйдите
+  <a href="#3-%d1%81%d0%be%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d0%b5-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-%d0%b8-%d0%b2%d1%8b%d0%b9%d0%b4%d0%b8%d1%82%d0%b5" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Нажмите <code>Ctrl + X</code>, затем <code>Y</code> и <code>Enter</code>, чтобы сохранить изменения и выйти из редактора.</p>
 
-<h2>4. Разрешите новый порт в брандмауэре</h2>
+<h2 id="4-разрешите-новый-порт-в-брандмауэре" class="header-anchor-wrapper">4. Разрешите новый порт в брандмауэре
+  <a href="#4-%d1%80%d0%b0%d0%b7%d1%80%d0%b5%d1%88%d0%b8%d1%82%d0%b5-%d0%bd%d0%be%d0%b2%d1%8b%d0%b9-%d0%bf%d0%be%d1%80%d1%82-%d0%b2-%d0%b1%d1%80%d0%b0%d0%bd%d0%b4%d0%bc%d0%b0%d1%83%d1%8d%d1%80%d0%b5" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Если у вас включен брандмауэр (например, UFW или firewall), разрешите новый порт:</p>
 <p>Для UFW:</p>
@@ -283,17 +342,56 @@ Port 44333 3. Сохраните изменения и выйдите Нажми
 </span></span></code></pre></div><p>Для других брандмауэров (например, <code>iptables</code>):</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo iptables -A INPUT -p tcp --dport <span style="color:#d3869b">44333</span> -j ACCEPT
 </span></span></code></pre></div>
-<h2>5. Перезапустите SSH-сервис</h2>
+<h2 id="5-перезапустите-ssh-сервис" class="header-anchor-wrapper">5. Перезапустите SSH-сервис
+  <a href="#5-%d0%bf%d0%b5%d1%80%d0%b5%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d0%b5-ssh-%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Теперь перезапустите SSH-сервис для применения изменений:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart sshd
 </span></span></code></pre></div>
-<h2>6. Подключитесь к серверу</h2>
+<h2 id="6-подключитесь-к-серверу" class="header-anchor-wrapper">6. Подключитесь к серверу
+  <a href="#6-%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d0%b5%d1%81%d1%8c-%d0%ba-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d1%83" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Теперь вы можете подключаться к серверу по новому порту с использованием параметра <code>-p</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh user@your-server-ip -p <span style="color:#d3869b">44333</span>
 </span></span></code></pre></div>
-<h2>7. (Опционально) Закрытие старого порта (22)</h2>
+<h2 id="7-опционально-закрытие-старого-порта-22" class="header-anchor-wrapper">7. (Опционально) Закрытие старого порта (22)
+  <a href="#7-%d0%be%d0%bf%d1%86%d0%b8%d0%be%d0%bd%d0%b0%d0%bb%d1%8c%d0%bd%d0%be-%d0%b7%d0%b0%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d0%b5-%d1%81%d1%82%d0%b0%d1%80%d0%be%d0%b3%d0%be-%d0%bf%d0%be%d1%80%d1%82%d0%b0-22" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</svg>
+  </a>
+</h2>
 
 <p>Если вы уверены, что новый порт работает, можно заблокировать порт 22 для дополнительной безопасности. Для этого выполните команду:</p>
 <div class="highlight"><pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo ufw deny 22/tcp
